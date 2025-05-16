@@ -46,6 +46,10 @@ mongoose.connect(process.env.MONGO_URI, {
 app.use('/api/users', require('./routes/users'));
 app.use('/api/books', require('./routes/books'));
 
+app.get('/', (req, res) => {
+  res.send('API is running');
+});
+
 // Socket.IO connection handling
 io.on('connection', (socket) => {
   console.log('A user connected:', socket.id);
