@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff; /* White background like LandingPage */
+  color: #1a1a1a; /* Dark text for contrast */
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff; /* Ensure white background */
+}
+
+.app-content {
+  padding: 40px 20px;
+  flex: 1;
+  text-align: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .app-content {
+    padding: 20px;
+  }
+}

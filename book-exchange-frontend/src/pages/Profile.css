@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fd;
+}
+
+.profile-page {
+  text-align: center;
+}
+
+/* .profile-header {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  height: 220px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+} */
+
+.profile-card {
+  background: #fff;
+  width: 100%;
+  max-width: 420px;
+  margin: -80px auto 20px;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.avatar-container {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+  background-color: #ddd;
+}
+
+.username {
+  margin-top: 70px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.location {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.about, .contributions, .badges {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.about h3, .contributions h3, .badges h3 {
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.about p, .contributions div, .badges-list span {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.contributions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.badges-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.badge {
+  background: #f1f1f1;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+}
+
+.edit-btn, .update-btn {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.edit-btn:hover, .update-btn:hover {
+  opacity: 0.9;
+}
+
+.edit-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bio-input, .contact-input, .avatar-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+.error, .message {
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.error {
+  background: #ffe0e0;
+  color: #b10000;
+}
+
+.message {
+  background: #e0ffe0;
+  color: #006400;
+}

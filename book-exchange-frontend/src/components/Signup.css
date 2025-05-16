@@ -1,0 +1,108 @@
+/* Signup.css */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Same gradient as Login */
+  }
+  
+  .signup-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+  }
+  
+  .signup-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    position: relative;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-input:focus {
+    border-color: #28a745; /* Green to differentiate from Login's blue */
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.3);
+  }
+  
+  .form-input::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+  
+  .signup-button {
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    background: #28a745; /* Green for signup */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .signup-button:hover {
+    background: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  .signup-button:active {
+    transform: translateY(0); /* Reset on click */
+  }
+  
+  /* Animation for card entrance */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .signup-card {
+      padding: 20px;
+      max-width: 90%;
+    }
+  
+    .signup-title {
+      font-size: 1.5rem;
+    }
+  
+    .form-input,
+    .signup-button {
+      font-size: 0.9rem;
+    }
+  }
