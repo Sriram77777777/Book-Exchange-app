@@ -1,0 +1,40 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+.env
+
+# Build files
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Frontend dependencies (if using tools like npm or yarn in client/)
+client/node_modules/
+client/dist/
+
+# Coverage reports
+coverage/
+
+# Optional: Ignore the entire `.env` in subfolders
+**/.env
